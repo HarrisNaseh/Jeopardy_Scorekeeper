@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Scorekeeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="teamNumberSection">
+        <h3>Jeopardy Scorekeeper</h3>
+        <div class="input-group">
+        <label for="numTeams">Enter Number of Teams:</label>
+        <input type="number" id="numTeams" min="1">
+        <button id="confirmTeamNumber">Confirm</button>
+    </div>
+    </div>
+
+    <div id="teamNamesSection" style="display: none;">
+        <form id="teamNamesForm">
+            <!-- Team name inputs will be added here dynamically -->
+        </form>
+        <button id="confirmTeamNames">Confirm Team Names</button>
+    </div>
+
+    <div id="scoreManagementSection" style="display: none;">
+        <!-- Score management content will be added here dynamically -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

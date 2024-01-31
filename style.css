@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+label, input, button {
+    margin: 10px;
+}
+
+#teamNamesSection, #scoreManagementSection {
+    margin-top: 20px;
+}
+
+
+#scoreManagementSection div {
+    margin-bottom: 20px;
+}
+
+#scoreManagementSection span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+#scoreManagementSection{
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if the window is too narrow */
+  justify-content: center; /* Centers the cards in the container */
+  gap: 20px; /* Adjust as necessary for spacing between cards */
+  margin-top: 20px;
+}
+
+.teamCard {
+    border-radius: 10px;
+    padding: 10px;
+   
+    text-align: center;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.teamCard .header, .teamCard .presetButtonContainer, .teamCard .customScoreContainer {
+  width: 100%; /* Ensure children don't overflow the card */
+  margin-bottom: 10px; /* Space between card sections */
+}
+
+.scoreLabel {
+  font-size: 1.5rem; /* Adjust as needed for score label size */
+  margin-top: 10px; /* Space above the score label */
+  margin-bottom: 10px; /* Space below the score label */
+  background: #fff; /* Background color to prevent seeing through overlapped content */
+  width: 100%; /* Ensure the label takes up full width of card */
+  order: 1; /* Make sure the score label comes first in the flex container */
+}
+.teamCard .header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.teamCard .content {
+    flex-grow: 1;
+}
+
+.teamCard .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamCard button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.teamCard button:hover {
+    background-color: #45a049;
+}
+
+.teamCard input[type="number"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.teamCard h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.teamCard p {
+    font-size: 14px;
+    color: #666;
+}
+
+.teamCard button.negative{
+    background-color: #b13a3a;
+}
+
+.teamCard button.negative:hover{
+    background-color: #a55e5e;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    
+    --background-size: unquote('min(100vw, 40em)');
+  }
+  
+  html {
+    font-size: calc(100% + 0.5vw);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition-duration: 0.001s !important;
+    }
+  }
+  #teamNumberSection label, h3{
+    color: white;
+  }
+
+
+  body {
+    background: linear-gradient(100deg, #402, #006);
+    padding: 2em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 55'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23fff' stroke-width='7' opacity='.1'%3E%3Cpath d='M-345 34.5s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 48.3 0 48.3s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 20.7s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 34.5 0 34.5s115-13.8 115-13.8S172.5 6.9 230 6.9s115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8m-920 27.6s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 62.1 0 62.1s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 6.9s57.5-13.8 115-13.8S-115 6.9-115 6.9-57.5 20.7 0 20.7 115 6.9 115 6.9 172.5-6.9 230-6.9 345 6.9 345 6.9s57.5 13.8 115 13.8S575 6.9 575 6.9'/%3E%3Cpath d='M-345-6.9s57.5-13.8 115-13.8S-115-6.9-115-6.9-57.5 6.9 0 6.9 115-6.9 115-6.9s57.5-13.8 115-13.8S345-6.9 345-6.9 402.5 6.9 460 6.9 575-6.9 575-6.9m-920 69s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 75.9 0 75.9s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3C/g%3E%3C/svg%3E%0A"),
+      linear-gradient(80deg, #202, #006);
+    background-position: 50% 50%;
+    animation: background-move 10s linear infinite;
+    background-size: 100vw auto, 100% 100%;
+    background-size: unquote('max(100vw, 30em)') auto, 100% 100%;
+  }
+  
+  @keyframes background-move {
+    0% { background-position: 0 0, 0 0; }
+    100% { 
+      background-position: 100vw 0, 0 0;
+      background-position: unquote('max(100vw, 40em)')  0, 0 0;
+    }
+  }
+  
+  .input-group {
+    width: 100%;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  
+    @supports (mix-blend-mode: darken) {
+      position: relative;
+      mix-blend-mode: lighten;
+  
+      &__label {
+        position: absolute;
+        left: 3em;
+        top: -0.28em;
+        background: #000;
+      }
+    }
+  
+    &__label {
+      padding: 0 0.5em;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      font-size: 0.875em;
+      letter-spacing: 0.1em;
+      color: #ccd;
+      color: rgba(255, 220, 255, 0.6);
+      cursor: pointer;
+    }
+  
+    &__input {
+      color: #fff;
+      font-size: 1.25rem;
+      line-height: 1;
+      border-style: none;
+      outline: none;
+      
+      height: calc(1em + 1.6em + 0.5em);
+      width: 100%;
+      padding: 0.8em 1em;
+      border: 0.25em solid transparent;
+      background-image: linear-gradient(#000, #000),
+        linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      border-radius: 1.8em;
+      background-size: 200% 100%;
+      transition: background-position 0.8s ease-out;
+      
+      &:hover {
+        background-position: 100% 0;
+      }
+  
+      &:focus {
+        outline: 2px dashed #ad2b89;
+        outline-offset: 0.5em;
+      }
+    }
+  }
+  
+  
+  
