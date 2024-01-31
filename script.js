@@ -1,6 +1,9 @@
 document.getElementById('confirmTeamNumber').addEventListener('click', function() {
     var numTeams = document.getElementById('numTeams').value;
-    setupTeamNamesInput(numTeams);
+    if(numTeams > 0){
+        setupTeamNamesInput(numTeams);
+    }
+    
 });
 
 function setupTeamNamesInput(numTeams) {
