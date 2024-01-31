@@ -59,7 +59,7 @@ function setupScoreManagement(teamNames) {
         presetButtonContainer.className = 'presetButtonContainer';
 
         // Create preset score buttons
-        ['+100', '+200', '+300', '+400', '+500', '-100', '-200', '-300', '-400', '-500'].forEach(function(amount) {
+        ['+200', '+400', '+600', '+800', '+1000', '-200', '-400', '-600', '-800', '-1000'].forEach(function(amount) {
             var scoreButton = document.createElement('button');
             scoreButton.textContent = amount;
             if (amount.startsWith('-')) {
